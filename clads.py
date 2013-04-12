@@ -50,24 +50,3 @@ for myfile in onlyfiles:
 			time.sleep(10)
 	workingfile.close()
 	time.sleep(60)
-
-
-
-
-# this loads the lost and found search page for San Francisco
-#page = urllib2.urlopen('http://sanfrancisco.craigslist.org/search/laf?zoomToPosting=&query=iphone&srchType=A')
-# this puts page into BS
-#results = BeautifulSoup(page)
-#listURL = results.findAll('a', href=re.compile("^http.*\/laf\/"))
-#
-#for link in listURL:
-#	#get whole ad text from listURL  
-#	wholead = urllib2.urlopen(link.get('href'))
-#	ad = BeautifulSoup(wholead)
-#	textad = ad.findAll(id='postingbody')
-#
-#	print textad
-	
-#listURL = results.findAll("p", {"class" : "pl"})
-#listURL = results.findAll(True , {"class" : "pl"})
-
